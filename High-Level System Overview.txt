@@ -1,0 +1,36 @@
++----------------+
+|    Pathway     |
++----------------+
+| - name         |
+| - reactions[]  |
++----------------+
+| + simulate()   |
+| + step()       |
++----------------+
+        |
+        | contains
+        v
++----------------+
+|    Reaction    |
++----------------+
+| - reactants[]  |
+| - products[]   |
+| - enzyme       |
++----------------+
+| + calculateRate() |
+| + proceed()       |
++----------------+
+        |
+        | uses
+        v
++----------------+
+|    Enzyme      |  <<abstract>>
++----------------+
+| - km           |
+| - vmax         |
+| - optimalPH    |
++----------------+
+| + bind()       |
+| + isActive()   |
+| + calculateRate() |
++----------------+

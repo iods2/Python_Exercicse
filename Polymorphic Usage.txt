@@ -1,0 +1,14 @@
+Client Code
+    |
+    | calls calculateRate()
+    v
++----------------+
+| Enzyme (ref)   |
++----------------+
+        |
+        | runtime dispatch
+        v
++----------------------------+
+| Specific Enzyme Subclass   |
+| (MM or Allosteric)         |
++----------------------------+
